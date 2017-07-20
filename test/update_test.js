@@ -1,7 +1,7 @@
 const assert = require('assert');
 const User = require('../src/User');
 
-describe('Deleting records', () => {
+describe('Updating records', () => {
 
   let user;
 
@@ -13,14 +13,14 @@ describe('Deleting records', () => {
       });
   });
 
-  it('detele a user', (done) => {
-    user.remove()
+  it('update a user', (done) => {
+    User.update({name: 'Joe'}, {name: 'Alex'})
       .then(() => {
-        return User.findOne({name: 'Joe'});
+        return User.findOne({name: 'Alex'});
       })
       .then((user) => {
-        assert(user === null);
+        assert(user.name === 'Alex');
         done();
-    });
+      });
   });
 });
