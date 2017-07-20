@@ -1,0 +1,26 @@
+{
+  "name": "mongodb-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec './node_modules/.bin/mocha'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roya-winbej/mongodbPlayground.git"
+  },
+  "author": "Alexander Mykolaichuk <alexmix3000@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roya-winbej/mongodbPlayground/issues"
+  },
+  "homepage": "https://github.com/roya-winbej/mongodbPlayground#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.3",
+    "nodemon": "^1.11.0"
+  }
+}
