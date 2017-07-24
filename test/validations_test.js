@@ -25,7 +25,7 @@ describe('Validations records', () => {
 
     user.save()
       .catch((validationMessages) => {
-        const { message } = validationMessages.errors.name; 
+        const { message } = validationMessages.errors.name;
         assert(message === 'User name must be greater then 2 characters');
         done();
       })
